@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  background-color: black;
+  color: white;
+}
+.game{
+  margin: 0px auto 0px auto;
+  border: 1px solid red;
+  padding: 0px;
+  width: 800px;
+  height: 800px;
+}
+.play{
+  margin: 0px 0px 0px 100px;
+}
+.row{
+  height: 180px;
+  width: 500px;
+  margin: 0px;
+  display: flex;
+}
+.hol{
+  border: 1px solid black;
+  height: 180px;
+  width: 180px;
+  margin: 0px;
+}
+.hol:hover{
+  border: 1px green solid;
+}
+.img_state{
+  height: 180px;
+  width: 180px;
+  background-color: white;
+}
+.top{
+  justify-content: space-between;
+  margin: 0px 0px 50px 80px;
+}
+.bottom{
+  margin-top: 10px;
+}
+.bottom, .top{
+  display: flex;
+  width: 500px;
+}
+#turn, #p1, #p2{
+  height: 100px;
+}
+.r{
+  height: 70px;
+  width: 150px;
+  padding:10px;
+  color: inherit;
+  border: 2px solid lightgray;
+  margin: 0px 0px 0px auto;
+}
+.r:hover{
+  color: black;
+  background-color: white;
+}
+#message{
+  border: 2px double chocolate;
+  margin: 0px 0px 0px 80px;
+  height: 50px;
+  width: 150px;
+  padding:10px;
+}
