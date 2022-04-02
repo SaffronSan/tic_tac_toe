@@ -8,7 +8,7 @@ let make = (ste ="",pos="",id="") => box = {
         if(this.state == "null"){
             document.getElementById("message").innerHTML = "Message block:";
             this.state = turn;
-            document.getElementById(this.pic).src = "/images/"+turn+".png";
+            document.getElementById(this.pic).src = "/tic_tac_toe/images/"+turn+".png";
             if(turn == "X"){turn = "O";}
             else if(turn == "O"){turn = "X";}
             document.getElementById("message").innerHTML = (count > 3 && winner() == "X")? "Player 1 has won!" : (count > 3 && winner() == "O")? "Player 2 has won!" : (count == 8)? "no one has won!" : "Message block:";
@@ -99,7 +99,7 @@ function createBox(row){
 function restart(click){
     for(var i = 0; i != 9;i++){
         game[i].state = "null";
-        document.getElementById(game[i].pic).src = "/images/clear.jpeg";
+        document.getElementById(game[i].pic).src = "/tic_tac_toe/images/clear.jpeg";
     }
     if(click == 0){
         document.getElementById("message").innerHTML = "Message block:";
